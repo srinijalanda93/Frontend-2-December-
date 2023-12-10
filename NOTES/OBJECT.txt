@@ -1,0 +1,72 @@
+DATE:06/12/2023
+CONCEPT:OBJECT
+1.Define of OBJECT
+2.CURD ON OBJECT,KEYS,values on objects
+3.Copy of OBJECT
+4.Clone of OBJECT  (UD)
+
+1.Define of OBJECT
+Object is collection of the data Associated with Key value pair
+->Having customized indexing
+->"WHOLE JS DEALS WITH OBJECTS ONLY".
+
+2.CURD ON OBJECT
+Creating an object :where each data associated with key:value separated by commas with the curly braces
+SYNTAX:
+let varName={
+    key1:value1,
+    key2:value2,
+    key3:value3,....key_n:value_n,
+}
+->EMPTY OBJECT CREATION let varName={} we call it as object iteral
+->EMPTY OBJECT CREATION let varName=new object();
+->
+->KEY is of type String.
+->VALUE can any Datatype (str,number,boolean.function etc)
+
+Reading /Accessing the object :values from from the object we use Key acts as indexing
+->can used in 2 way 
+1.indexing 2.dot 
+1.indexing :similar to the array "but the KeyName alway need to enclosed with quotes"*
+2.dot:also access the value associated with ObjNAME.keyName
+
+The user is looking for cars and he/she has been asked to tell us the brand that he/she likes. That brand is a key that we will use to only display back the appropriate models.
+
+For simplicity, in the example each brand will have only one model.
+
+const cars = {
+  ferrari: "california",
+  porsche: "911",
+  bugatti: "veyron",
+}
+
+// user input
+const key = "ferrari"
+console.log(cars.key);
+// undefined
+console.log(cars['key']);
+// undefined
+console.log(cars[key]);
+// california
+As you can see, we need to use bracket notation to access the property of the object via its key, stored in our variable.
+Be careful, no strings are around key, as it’s a variable name and not a string.
+
+Update of the object
+SYNTAX: objName['keyName']=value;
+SYNTAX: objName.keyName=value;
+
+Delete of the object:unlike array to remove the element from the array we use the splice it won't work here
+SYNTAX :delete ObjName.keyName;
+
+Fetching the keys from the Object we use  "always return in the array for so store n the variable"*
+SYNTAX:object.keys(keyName);
+
+Fetching the Values from the Object we use  "always return in the array for so store n the variable"*
+SYNTAX:object.values(keyName);
+
+3.Copy of OBJECT
+It take the reference  and store it in the variable simple address of the obj
+
+4.Clone of object:simple combine the two or more object into one
+using object,assign{obj1,obj2....};
+
