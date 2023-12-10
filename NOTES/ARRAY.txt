@@ -1,0 +1,71 @@
+DATE:10/12/2023 (SUNDAY)
+CONCEPTS:
+1.ARRAY IN JAVASCRIPT
+2.Defination of ARRAY (D)
+3.CURD opertion on ARRAY (D)
+4.properties on Array=>update (D)
+4.HOF on ARRAY (forEach,map,filter,reduce) (in other notes)
+
+Define: Array is a collection of hetergenous datatype categoried under the object
+->stored in the continous memory
+->An arrat is an object that stores values in order
+->alway for the Zero indexing 
+->typeof array is object
+->Array in js are dynamic(mutable)
+->outofBound/negative index always gives the "undefined"
+
+CURD opertion on ARRAY:
+Create of Array:enclosed with square bracket where each data is separted by commas
+SYNTAX :arrName=[data1,data2,data3,....];
+
+Reading of Array:
+Reading or accessing the array can be done by indexing 
+SYNTAX: aarName[index_no];
+
+Delete of Array:
+To delete Whole Array use the keyword delete followed by varName
+SYNTAX :delete VarName; (not working)
+Delete An Element from the Array :pop(),unshift();
+
+Properties on Array:
+Since Array in JS are mutable in Nature which allows the developer to change the values in the array
+Update of Array:
+As Array are dynamic in JS we can update the values at place by using the index properties
+SYNTAX :varName[index_no]=newValue;
+1.Add the Element 
+2.Delete the Element
+3.Add and Delete the Element (simultaneously) =>splice
+4.Extract the SubArray (slice)
+
+1.Add the Elements 
+a.At frist using unshift()//parameter mandatory*
+b.At last using push()//parameter mandatory*
+SYNTAX:arrName.push(v1,v2,v3,...)
+SYNTAX:arrName.unshift(v1,v2,v3,...)
+
+2.Delete the Element:always returns the deleted values (so need to store in the variables)
+a.At frist using shift()//NOparameter mandatory*
+b.At last using pop()//NOparameter mandatory*
+SYNTAX:let varName=arr.shift()
+SYNTAX:let varName=arr.pop()
+
+3.Add and Delete the Element (simultaneously) :"always return the deleted elements IN THE FORM OF ARRAY".
+=>splice(index,countno,v1,v2,v3...)
+->index:indicate the value/element need to add or remove from the array
+->count No:number need to remove from the array if not provide remove all the elements from index given
+->v1,v2,v3...:last parament take the element to add in the array.
+for ADD WITHOUT DELETING
+SYNTAX:arrName.splice(indexno,0,value1,v2,v3..) //always countno:0*
+
+4.Extract the SubArray (slice):return in the form of ARRAY
+arrName.slice(Si,ei);
+si=including index;
+ei=exclude the index
+
+
+
+
+
+
+
+
