@@ -1,0 +1,74 @@
+Date:07/12/2023 
+Cocept:
+1.Function,
+2.type of Function
+3.HOF,
+4.CallBack,
+5.HOF on Arrays,
+6.for in ,for of.
+
+1.Function:Function in JS are datatype 
+Function contains a piece or block code it executes whenerver we need it
+Function need 1.Function declaration 2.Function Call.
+SYNTAX :1.Function declaration
+function fName(parameter1,parameter2...){
+    //block of code;
+}
+SYNTAX 2.Function Call
+FName(parameter1,parameter2...); 
+
+
+2.type of Function:categories of Function 
+a.Regular Function(Named Function) :contains function(keyword) with fName followed(p1,p2,p3..)
+b.Regular Function(Anonymous Function): contains only the function(keyword) with No "fName" followed(p1,p2,p3..)
+                                      so it is assigned to a variable (because function is alos a datatype in js) 
+                                      which future acts as function call();
+c.Arrow Function :Arrow Function is used more efficient then above 2  using this keyword
+"trick if arraow function take only one argument omit the () round braces"
+
+SYNTAX of Anonymous Function
+let varName=function (p1,p2,p3...){
+    //block of code
+}
+//function call usingthe assigned variable
+varName(p1,p2,p3..);
+
+SYNTAX of ARROW Function (alway => need to be together no space)*
+let varName=(p1,p2,p3...) =>{    
+    //block of code
+}
+//function call usingthe assigned variable
+varName(p1,p2,p3..);
+
+3.HOF:HIGHER ORDER FUNCTION
+:A Function which takes/returns another Function we call that Function as HOF
+4.CallBack: A function which takes a function as an argument we call it as callback Function 
+
+function fName(cb){ //here fName =>HOF and cb=>Callback
+    console.log("Hof");
+    cb(); //callback function
+}
+let f=()=>{
+    console.log("call back function");
+}
+//calling the function;
+fName(f);  //here fName =>HOF and f=>Callback
+
+5.HOF on Arrays are
+a. forEach(cb)
+b. map(cb)
+c. filter(cb)
+d.reduce(cb,inital_value)
+e.sort
+
+a. forEach(cb):it is a HOF used on Array
+1.simple to iterate over the array (just like for)
+2.take madantory argument => callback function
+3.forEach invoke the callback (cb) internally based on the array length
+4.forEach returns nothing (undefined).
+5.cb takes 3 argument i.element ii.index iii.list (array) we can do the changes based on the requiremenets
+ cb(e,i,list);
+6."iterate through the array handy we can use ForEach"...
+
+
+b. map(cb):
