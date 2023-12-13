@@ -71,4 +71,42 @@ a. forEach(cb):it is a HOF used on Array
 6."iterate through the array handy we can use ForEach"...
 
 
-b. map(cb):
+b. map(cb):it is used on Arrays
+"REMEMBER WHENEVER THEY SAID TO GET same LENGTH OF ARRAY =>USE MAP()"
+1.similar to forEach used to iterate the loop but returns an 'ARRAY' of Same length.
+2.iterate over the array and invokes the cb based on the array size(original array)
+3.returns an array of Same length (original Array)
+
+SYNTAX arr.map(cb)
+let cb=(e,i,l) =>{
+    return ; always return array 
+}
+
+c. Filter :it is used for Arrays :no console
+Filter mean taking out the desired requirement.(ALWAY PROVIDE THE CONDITION)
+1.similar to map  but return array of different size
+2.iterate over the array and filter invoke the cb based on the array length (original array)
+3.But return only the Boolean value (true values ) which form an array 
+
+d. reduce :used on array:Return**** (previous will capture for each iteartion)
+1. take two argument cb,inital value.
+2.reduce invoke the cb based on the array length (original array)
+3.WHEN 2ND ARGUMENT IS NOT MENTIONED ITERATION START AT INDEX 1"=>will be 1st ITERATION
+array execution starts at index 1 for the point 3.
+=>cb (previous,currentelement,indexno)
+previous :the 2nd argument inital value
+current ele:current element during the iteratiion phase.
+index:index of current element.
+
+->during execution phase (1s iteartion)
+previous value it take the inital value which is passed as as 
+argument in reduce( ,inintal value);
+->2nd iteration cb(p,ce,i){} here the previous vlaue take the return
+ value of the frist iteration*****
+ ->Simple used for Summation
+
+6.for in ,for of.
+for in :used to iterate on KEYS>
+for of :used to iterate on VALUES>(not applicable for object)
+
+
