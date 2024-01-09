@@ -1,0 +1,30 @@
+DATE:13/12/2023
+CONCEPT:STRING
+1.defination STRING ,template string/string literals
+2.Accessing ,length property
+3.IMMUTABLE BEHAVIOUR
+4.toUpperCase,toLowerCase() (not done ->raw code)
+4.Character to ASCII (charCodeAt(i))
+5.ASCII to character /string (String.fromCharCode(Ascii_No))
+6. str.join(demiliter),split(demiliter),slice(si,ei),concate.
+
+1.defination STRING ,template string/string literals
+String:collect of data which enclosed with (''or "" or``) quotes
+Template literals:used hold the dynamic values
+                   Backtrick `${varName}`
+                   it is reable compare to the concentation.
+
+2.Accessing ,length property
+Accessing the specific character using the indexing method same as array
+varName[index_No];
+
+length property
+varName.length; 
+
+3.IMMUTABLE BEHAVIOUR
+String shows the immutable Behaviour because 
+1.modify at any place from the given string it won't give the "ERROR OR MODIFIED VERSION"
+
+
+4.toUpperCase,toLowerCase()
+
