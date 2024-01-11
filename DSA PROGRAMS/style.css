@@ -1,0 +1,19 @@
+.temp {
+  /* for the input */
+  border: 2px solid rgb(243, 255, 20);
+  margin-top: 3%;
+  padding: 6%;
+  background-color: antiquewhite;
+  text-align: center;
+  box-shadow: 3px 4px 3px pink;
+}
+.bold,.srinija {
+  border: 3px solid blue;
+  border-radius: 10px;
+  font-size: 23px;
+  font-style: italic;
+  padding: 4px;
+}
+.bg-color {
+  background-color: aquamarine;
+}

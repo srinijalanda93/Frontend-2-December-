@@ -1,4 +1,15 @@
 // DOM Queries DOM-1
+/**
+ * D= HTML document
+ * O=javascript object
+ * M=model
+ * simple DOM representing the HTML document in the form of javascript objects
+ * 
+ * 
+ * API means application programming Interface =>function| class|interface|objects that does some meaningful task
+ * 
+ * HTML document loads into the browser =>document API  =>objects 
+ */
 //revise the CSS SELECTOR PSEUDO SELECTOR...(+,~) +=>immediate next sibiling  ~ =>next sibiling of its match
 /**
  * tagName
@@ -37,7 +48,7 @@
  * 
  */
 //document=>is an web API that not part of JS  but available in the browser environment it knows everything about the DOM 
-//using document(object) if we need any particular HTML element we use the above three properties
+//using document(object) if we need any particular HTML element we use the above the properties
 
 // let eleobj=document.getElementById("uname");
 // console.log(eleobj); //it prints the HTMLelement in the console not in the object form
@@ -53,8 +64,9 @@ eleobj.tagName.toLowerCase()--->'input'
 */
 
 /*giving same  "IDName" for the different Html elements 
-=>won't through any error instead of it goes in a linear manner
-*once it found the HTML which holding idName it return the particular Html to us and don't above the other elements have same idName or Not
+=>won't through any error instead of it goes in a linear search manner
+*once it found the HTML which holding idName it return the particular Html to us and don't care 
+below the other elements have same idName or Not
 **/
 
 
