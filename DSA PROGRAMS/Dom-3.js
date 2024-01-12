@@ -18,3 +18,12 @@ function onButtonClick(){
     const con=document.querySelector('.container');
     con.classList.toggle('srinija'); //onclick on it will add the style
 }
+function onmouseenter(){
+    const pobj=document.querySelector('.container2 p'); //pobj;
+    //when the mouseenter change the css
+    pobj.style.fontSize='20px';
+    pobj.style.fontweight='bolder';
+    pobj.style.fontStyle='italic';
+
+
+}

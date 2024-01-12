@@ -41,7 +41,7 @@
  *  FOUR WAYS OF EXTRACTING THE HTML ELEMENT OBJECTS
  * 1.document.getElementById("idName");
  * 2.document.getElementsByClassName('className'); -->HTMLCOLLECTION
- * 3.document.getElementByTagName();  -->HTMLCOLLECTION
+ * 3.document.getElementsByTagName('tagName);  -->HTMLCOLLECTION
  * CSS SELECTOR
  * 4.docuement.querySelector('.className/#idname/pseduoelements');
  * 5.docuement.querySelectorAll('.className/#idname/pseduoelements'); --->NodeList
@@ -76,7 +76,7 @@ console.log(boldObj); //print the bold HTML
 console.log(boldObj.className, boldObj.innerText  ,boldObj.tagName.toLowerCase());
 */
 
-//give the idName which doesn't exist in the HTML ELEMENT =>DOESN'T through error it will the null values
+//give the idName which doesn't exist in the HTML ELEMENT =>DOESN'T through error it will the 'null values'
 // let eobj=document.getElementById("sugaBTS");
 // console.log(eobj); 
 // console.log(typeof eobj);
@@ -85,7 +85,7 @@ console.log(boldObj.className, boldObj.innerText  ,boldObj.tagName.toLowerCase()
 
 
 // let obj=document.getElementsByClassName("two");
-// console.log(obj); //it give the HTMLCollection of element it allows the indexing.length 
+// console.log(obj); //it give the 'HTMLCollection' of element it allows the indexing,length 
 // //but don't support the HOF like forEach(),filter(),map();
 // console.log(obj.length) //it gives the length of the HTMLCOLLECTIONS
 // console.log(obj[0]) //gives the HTML Element
@@ -93,7 +93,8 @@ console.log(boldObj.className, boldObj.innerText  ,boldObj.tagName.toLowerCase()
 // console.log(obj[0].id) //it will gives the id of the element
 // console.log(obj[0].innerText) //innerText of the HTML element 
 
-//provide the class Name which doesn't existing the HTML element=>don't through the error it give an empty HTMLCOLLECTION[]
+//provide the class Name which doesn't existing the HTML element
+//=>don't through the "error it give an empty HTMLCOLLECTION[]"
 
 // let ele=document.getElementsByClassName("hello");
 // console.log(ele);
