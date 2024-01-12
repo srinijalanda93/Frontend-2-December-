@@ -17,7 +17,7 @@
  *
  * Ex:<p data-info="red">Hello world </p>
  * <b data-info="red">srinija ananda </b>
- * in the abive example giving the custom-attribute to different HTML ELEMENT IS allowed.
+ * in the above example giving the custom-attribute to different HTML ELEMENT IS allowed.
  *
  * ex:<p data-info="red" data-info="blue">Hello world </p>
  * the above is not good practice
@@ -75,7 +75,7 @@ console.log(input.nodeName);
  */
 
 // input.style.padding  -->''
-//we are using the inline stylingusing the input object it will gives the empty string
+//we are using the inline styling the input object it will gives the empty string
 // object.style --->projected when we use the inline styling not for internal and external
 
 // input.style.border="2px solid green";
