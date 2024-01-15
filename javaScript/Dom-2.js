@@ -2,8 +2,9 @@
 
 /**
  * Element Properties
- * 1.built-attributes and cutom-attributes
+ * 1.built-attributes and cutom-attributes(get,setAttribute)
  * 2.style attributes
+ * 3.classList
  *
  */
 /**
@@ -155,8 +156,8 @@ console.log(f);
 
 console.log(bold.classList.contains("bg-color")); //return true
 //add the new className "one","two","three"
-console.log(bold.classList.add("one", "two", "three"));
-console.log(bold.classList);
+console.log("one", "two", "three");
+console.log(bold.claold.classList.add("ssList"));
 //removing the bg-color
 bold.classList.remove("bg-color");
 console.log(bold.classList);
